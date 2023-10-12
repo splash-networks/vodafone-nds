@@ -12,6 +12,8 @@ if (isset($_POST['verify'])) {
     $append_response = fopen('database.txt','a');
     fwrite($append_response, $survey_response);
     fclose($append_response);
+
+    header("location: thanks.html");
 }
 
 ?>
