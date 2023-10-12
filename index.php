@@ -1,9 +1,16 @@
 <?php
 
 if (isset($_POST['verify'])) {
-    $appendVar = fopen('database.txt','a');
-    fwrite($appendVar, 'So this the new line');
-    fclose($appendVar);
+    $survey_response = "";
+    foreach($_POST as $key => $value) {
+        if (str_contains($key, "surveyquestion")) {
+            $survey_response = $survey_response . $value . ",";
+        }
+    }
+    $survey_response = substr($survey_response, 0, -1);
+    $append_response = fopen('database.txt','a');
+    fwrite($append_response, $survey_response);
+    fclose($append_response);
 }
 
 ?>
@@ -14,7 +21,7 @@ if (isset($_POST['verify'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Survey</title>
 </head>
 <body>
   <div class="text-center">
