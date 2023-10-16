@@ -19,7 +19,7 @@ if (isset($_POST['verify'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -175,6 +175,81 @@ if (isset($_POST['verify'])) {
                                 <div class="mb-3">
                                     <label for="surveyquestion10" class="form-label">Question 10</label>
                                     <select class="form-control" name="surveyquestion10" id="surveyquestion10">
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                        <option value="6">Item 6</option>
+                                        <option value="7">Item 7</option>
+                                        <option value="8">Item 8</option>
+                                        <option value="9">Item 9</option>
+                                        <option value="10">Item 10</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="surveyquestion11" class="form-label">Question 11</label>
+                                    <select class="form-control" name="surveyquestion11" id="surveyquestion11">
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                        <option value="6">Item 6</option>
+                                        <option value="7">Item 7</option>
+                                        <option value="8">Item 8</option>
+                                        <option value="9">Item 9</option>
+                                        <option value="10">Item 10</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="surveyquestion12" class="form-label">Question 12</label>
+                                    <select class="form-control" name="surveyquestion12" id="surveyquestion12">
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                        <option value="6">Item 6</option>
+                                        <option value="7">Item 7</option>
+                                        <option value="8">Item 8</option>
+                                        <option value="9">Item 9</option>
+                                        <option value="10">Item 10</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="surveyquestion13" class="form-label">Question 13</label>
+                                    <select class="form-control" name="surveyquestion13" id="surveyquestion13">
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                        <option value="6">Item 6</option>
+                                        <option value="7">Item 7</option>
+                                        <option value="8">Item 8</option>
+                                        <option value="9">Item 9</option>
+                                        <option value="10">Item 10</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="surveyquestion14" class="form-label">Question 14</label>
+                                    <select class="form-control" name="surveyquestion14" id="surveyquestion14">
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                        <option value="3">Item 3</option>
+                                        <option value="4">Item 4</option>
+                                        <option value="5">Item 5</option>
+                                        <option value="6">Item 6</option>
+                                        <option value="7">Item 7</option>
+                                        <option value="8">Item 8</option>
+                                        <option value="9">Item 9</option>
+                                        <option value="10">Item 10</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="surveyquestion15" class="form-label">Question 15</label>
+                                    <select class="form-control" name="surveyquestion15" id="surveyquestion15">
                                         <option value="1">Item 1</option>
                                         <option value="2">Item 2</option>
                                         <option value="3">Item 3</option>
