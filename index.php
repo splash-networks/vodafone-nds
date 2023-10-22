@@ -2,6 +2,10 @@
 
 session_start();
 
+
+phpinfo();
+
+
 if (isset($_POST['verify'])) {
     $survey_response = "";
     foreach($_POST as $key => $value) {
