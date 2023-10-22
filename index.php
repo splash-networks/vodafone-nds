@@ -17,10 +17,11 @@ if (isset($_POST['verify'])) {
 
     header("location: thanks.php");
 } else {
-//    $_SESSION['authaction'] = $_POST['authaction'];
-//    $_SESSION['tok'] = $_POST['tok'];
-//    $_SESSION['redir'] = $_POST['redir'];
-    print_r($_POST);
+    $_SESSION['authaction'] = $_POST['authaction'];
+    $_SESSION['tok'] = $_POST['tok'];
+    $_SESSION['redir'] = $_POST['redir'];
+
+    echo $_SESSION['authaction'];
 }
 
 ?>
