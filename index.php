@@ -20,8 +20,6 @@ if (isset($_POST['verify'])) {
     $_SESSION['authaction'] = $_POST['authaction'];
     $_SESSION['tok'] = $_POST['tok'];
     $_SESSION['redir'] = $_POST['redir'];
-
-    echo $_SESSION['authaction'];
 }
 
 ?>
@@ -31,7 +29,7 @@ if (isset($_POST['verify'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bootstrap.css" rel="stylesheet">
+    <link href="http://10.3.141.1/bootstrap.min.css" rel="stylesheet">
     <title>Survey</title>
 </head>
 <body>
