@@ -11,7 +11,7 @@ foreach($_POST as $key => $value) {
     }
 }
 $survey_response = substr($survey_response, 0, -1);
-$survey_response = $survey_response . "\n";
+$survey_response = $survey_response;
 $append_response = fopen('database.txt','a');
 fwrite($append_response, $survey_response);
 fclose($append_response);
