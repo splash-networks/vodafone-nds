@@ -33,11 +33,7 @@ fclose($append_response);
 </form>
 
 <script>
-    window.onload = function () {
-        window.setTimeout(function () {
-            document.auth.submit();
-        }, 2000);
-    };
+    document.auth.submit();
 </script>
 </body>
 </html>
