@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 if (isset($_POST['verify'])) {
     $survey_response = "";
     foreach($_POST as $key => $value) {
@@ -13,7 +15,11 @@ if (isset($_POST['verify'])) {
     fwrite($append_response, $survey_response);
     fclose($append_response);
 
-    header("location: thanks.html");
+    header("location: thanks.php");
+} else {
+    $_SESSION['authaction'] = $_POST['authaction'];
+    $_SESSION['tok'] = $_POST['tok'];
+    $_SESSION['redir'] = $_POST['redir'];
 }
 
 ?>
