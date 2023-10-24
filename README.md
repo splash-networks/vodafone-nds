@@ -1,4 +1,4 @@
-# Spain Finder NDS Portal on Raspberry Pi
+# Vodafone NDS Portal on Raspberry Pi
 
 ### Raspberry Pi Image Configuration
 
@@ -40,8 +40,8 @@ mv htdocs htdocs.bk
 Download and setup our custom captive portal code (in `/etc/nodogsplash` directory):
 
 ```
-git clone https://github.com/splash-networks/spainfinder-nds.git
-mv spainfinder-nds htdocs
+git clone https://github.com/splash-networks/vodafone-nds.git
+mv vodafone-nds htdocs
 ```
 
 Restart NDS service:
@@ -56,15 +56,15 @@ Navigate to Lighttpd vhost directory and create a new vhost:
 
 ```
 cd /etc/lighttpd/conf-enabled
-nano 60-spainfinder-nds.conf
+nano 60-vodafone-nds.conf
 ```
 
 Add the following contents to the file:
 
 ```
 $HTTP["host"] =~ "(^|.)10.3.141.1$" {
-    server.document-root = "/var/www/spainfinder-nds/"
-    server.errorlog = "/var/log/lighttpd/spainfinder-nds-error.log"
+    server.document-root = "/var/www/vodafone-nds/"
+    server.errorlog = "/var/log/lighttpd/vodafone-nds-error.log"
 }
 ```
 
@@ -72,7 +72,7 @@ Setup server-side code:
 
 ```
 cd /var/www
-git clone -b server https://github.com/splash-networks/spainfinder-nds.git
+git clone -b server https://github.com/splash-networks/vodafone-nds.git
 cd spainfinder-nds
 chmod 666 database.txt
 ```
@@ -83,4 +83,4 @@ Restart Lighttpd service:
 systemctl restart lighttpd
 ```
 
-Any survey data entered by users will be saved to `/var/www/spainfinder-nds/database.txt`
+Any survey data entered by users will be saved to `/var/www/vodafone-nds/database.txt`
