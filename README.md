@@ -73,7 +73,7 @@ Setup server-side code:
 ```
 cd /var/www
 git clone -b server https://github.com/splash-networks/vodafone-nds.git
-cd spainfinder-nds
+cd vodafone-nds
 chmod 666 database.txt
 ```
 
